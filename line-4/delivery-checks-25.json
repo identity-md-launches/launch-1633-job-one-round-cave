@@ -1,0 +1,30 @@
+{
+  "record": 25,
+  "png": {
+    "format": "PNG RGB 8-bit",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "bytes": 2557936,
+    "sha256": "f37068160082fc2459acdb867c9edd9a9aa80963e64004cc398147cdb8f03276"
+  },
+  "jpeg": {
+    "format": "baseline JPEG, 3 components",
+    "dimensions": [
+      512,
+      512
+    ],
+    "bytes": 58092
+  },
+  "wall_alias_identical": true,
+  "goal_byte_unchanged": true,
+  "older_records_byte_unchanged": 24,
+  "existing_tools_unchanged": true,
+  "new_source_files_under_100KB": true,
+  "scope_check": "pass",
+  "named_outputs_untracked": true,
+  "visual_review": "VISUAL-25.md",
+  "unmet_visual_requirements_observed": [],
+  "visual_limit": "Generative edit preserves composition visually; pixel identity of inherited texture is not certified."
+}

@@ -1,0 +1,20 @@
+{
+  "schema": "call-expectation-v1",
+  "chain_id": 1,
+  "call": {
+    "to": "0xd782bdea4ef02a0bd391eb9089470c8080f0a68e",
+    "data": "0x18160ddd",
+    "value": "0x0"
+  },
+  "block": {
+    "number": "0x18f8d21",
+    "hash": "0xa15b57ef67efc19a40505b4d28f5ed90bdcde23a17a315702c133c33b9d62593",
+    "timestamp": "0x6ace66d7"
+  },
+  "evidence": "witness",
+  "expect": {
+    "kind": "uint256_range",
+    "min": "1000000000000000000000000000",
+    "max": "1000000000000000000000000000"
+  }
+}

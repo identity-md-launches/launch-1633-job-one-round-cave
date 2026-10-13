@@ -1,0 +1,71 @@
+{
+  "tests": 87,
+  "checks": [
+    {
+      "command": "python3 -B -m unittest discover -s line-4/tools/call-expectation -p 'test_*.py' -v",
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "05d1b5",
+        "wall_time_seconds": 0.000003186,
+        "exit_code": 0,
+        "original_token_count": 748,
+        "output": "test_agreed_false_is_mismatch_not_match (test_call_expectation.Expectations.test_agreed_false_is_mismatch_not_match) ... ok\ntest_agreed_revert_is_mismatch (test_call_expectation.Expectations.test_agreed_revert_is_mismatch) ... ok\ntest_agreed_true_matches (test_call_expectation.Expectations.test_agreed_true_matches) ... ok\ntest_all_call_fields_bind_expectation (test_call_expectation.Expectations.test_all_call_fields_bind_expectation) ... ok\ntest_bad_bool_encoding_and_empty_abi_returns_are_inconclusive (test_call_expectation.Expectations.test_bad_bool_encoding_and_empty_abi_returns_are_inconclusive) ... ok\ntest_each_block_field_is_bound (test_call_expectation.Expectations.test_each_block_field_is_bound) ... ok\ntest_exact_bytes_including_explicit_empty_and_case (test_call_expectation.Expectations.test_exact_bytes_including_explicit_empty_and_case) ... ok\ntest_input_objects_not_mutated (test_call_expectation.Expectations.test_input_objects_not_mutated) ... ok\ntest_invalid_expectations_rejected (test_call_expectation.Expectations.test_invalid_expectations_rejected) ... ok\ntest_missing_revert_bytes_remain_inconclusive_for_witness (test_call_expectation.Expectations.test_missing_revert_bytes_remain_inconclusive_for_witness) ... ok\ntest_no_silent_witness_downgrade_or_upgrade (test_call_expectation.Expectations.test_no_silent_witness_downgrade_or_upgrade) ... ok\ntest_precomputed_verdict_cannot_be_trusted (test_call_expectation.Expectations.test_precomputed_verdict_cannot_be_trusted) ... ok\ntest_real_single_revert_cannot_match_return (test_call_expectation.Expectations.test_real_single_revert_cannot_match_return) ... ok\ntest_return_interpretation_cannot_be_silently_changed (test_call_expectation.Expectations.test_return_interpretation_cannot_be_silently_changed) ... ok\ntest_rpc_failure_is_inconclusive (test_call_expectation.Expectations.test_rpc_failure_is_inconclusive) ... ok\ntest_saved_real_zto_matches (test_call_expectation.Expectations.test_saved_real_zto_matches) ... ok\ntest_uint256_range_boundaries_and_full_precision (test_call_expectation.Expectations.test_uint256_range_boundaries_and_full_precision) ... ok\ntest_witness_disagreement_is_not_success_even_within_range (test_call_expectation.Expectations.test_witness_disagreement_is_not_success_even_within_range) ... ok\ntest_wrong_chain_unknown_fields_or_missing_block_rejected (test_call_expectation.Expectations.test_wrong_chain_unknown_fields_or_missing_block_rejected) ... ok\ntest_cli_all_exit_codes (test_call_expectation.FilesAndCLI.test_cli_all_exit_codes) ... ok\ntest_demo_is_offline (test_call_expectation.FilesAndCLI.test_demo_is_offline) ... ok\ntest_invalid_input_has_json_error_and_exit_two (test_call_expectation.FilesAndCLI.test_invalid_input_has_json_error_and_exit_two) ... ok\ntest_strict_json_size_and_workspace (test_call_expectation.FilesAndCLI.test_strict_json_size_and_workspace) ... ok\n\n----------------------------------------------------------------------\nRan 23 tests in 0.011s\n\nOK\n"
+      }
+    },
+    {
+      "command": "python3 -B -m unittest discover -s line-4/tools/call-rehearsal -p 'test_*.py'",
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "a076b4",
+        "wall_time_seconds": 0.000002816,
+        "exit_code": 0,
+        "original_token_count": 30,
+        "output": "....................\n----------------------------------------------------------------------\nRan 20 tests in 0.059s\n\nOK\n"
+      }
+    },
+    {
+      "command": "python3 -B -m unittest discover -s line-4/tools/call-changes -p 'test_*.py'",
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "60d3b6",
+        "wall_time_seconds": 0.000002375,
+        "exit_code": 0,
+        "original_token_count": 34,
+        "output": "....................................\n----------------------------------------------------------------------\nRan 36 tests in 0.021s\n\nOK\n"
+      }
+    },
+    {
+      "command": "python3 -B -m unittest discover -s line-4/tools/call-witness -p 'test_*.py'",
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "751687",
+        "wall_time_seconds": 0.000003196,
+        "exit_code": 0,
+        "original_token_count": 27,
+        "output": "........\n----------------------------------------------------------------------\nRan 8 tests in 0.001s\n\nOK\n"
+      }
+    },
+    {
+      "command": "python3 -B line-4/tools/call-expectation/call_expectation.py demo",
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "2f482f",
+        "wall_time_seconds": 0.000002936,
+        "exit_code": 0,
+        "original_token_count": 547,
+        "output": "{\n  \"schema\": \"call-expectation-v1\",\n  \"verdict\": \"match\",\n  \"reason\": \"returned value satisfies expectation\",\n  \"chain_id\": 1,\n  \"expected\": {\n    \"schema\": \"call-expectation-v1\",\n    \"chain_id\": 1,\n    \"call\": {\n      \"to\": \"0xd782bdea4ef02a0bd391eb9089470c8080f0a68e\",\n      \"data\": \"0x18160ddd\",\n      \"value\": \"0x0\"\n    },\n    \"block\": {\n      \"number\": \"0x18f8d21\",\n      \"hash\": \"0xa15b57ef67efc19a40505b4d28f5ed90bdcde23a17a315702c133c33b9d62593\",\n      \"timestamp\": \"0x6ace66d7\"\n    },\n    \"evidence\": \"witness\",\n    \"expect\": {\n      \"kind\": \"uint256_range\",\n      \"min\": \"1000000000000000000000000000\",\n      \"max\": \"1000000000000000000000000000\"\n    }\n  },\n  \"evidence\": \"witness\",\n  \"agreement\": \"agree\",\n  \"observations\": [\n    {\n      \"source\": \"https://ethereum-rpc.publicnode.com\",\n      \"block\": {\n        \"number\": \"0x18f8d21\",\n        \"hash\": \"0xa15b57ef67efc19a40505b4d28f5ed90bdcde23a17a315702c133c33b9d62593\",\n        \"timestamp\": \"0x6ace66d7\"\n      },\n      \"call\": {\n        \"to\": \"0xd782bdea4ef02a0bd391eb9089470c8080f0a68e\",\n        \"data\": \"0x18160ddd\",\n        \"value\": \"0x0\"\n      },\n      \"returns\": \"uint256\",\n      \"result\": {\n        \"status\": \"returned\",\n        \"raw\": \"0x0000000000000000000000000000000000000000033b2e3c9fd0803ce8000000\",\n        \"uint256\": \"1000000000000000000000000000\"\n      }\n    },\n    {\n      \"source\": \"https://eth.drpc.org\",\n      \"block\": {\n        \"number\": \"0x18f8d21\",\n        \"hash\": \"0xa15b57ef67efc19a40505b4d28f5ed90bdcde23a17a315702c133c33b9d62593\",\n        \"timestamp\": \"0x6ace66d7\"\n      },\n      \"call\": {\n        \"to\": \"0xd782bdea4ef02a0bd391eb9089470c8080f0a68e\",\n        \"data\": \"0x18160ddd\",\n        \"value\": \"0x0\"\n      },\n      \"returns\": \"uint256\",\n      \"result\": {\n        \"status\": \"returned\",\n        \"raw\": \"0x0000000000000000000000000000000000000000033b2e3c9fd0803ce8000000\",\n        \"uint256\": \"1000000000000000000000000000\"\n      }\n    }\n  ],\n  \"limits\": \"Checks saved provider claims against a declared expectation at one historical block. A match is not transaction success, token movement, gas estimation, authentication, provider independence or a guarantee of future execution. Nothing sent.\"\n}\n"
+      }
+    },
+    {
+      "command": "python3 -B line-4/tools/call-expectation/call_expectation.py check line-4/tools/call-expectation/zto-live-observation.json line-4/tools/call-expectation/zto-live-expectation.json",
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "fc1c9b",
+        "wall_time_seconds": 0.000003166,
+        "exit_code": 0,
+        "original_token_count": 402,
+        "output": "{\n  \"schema\": \"call-expectation-v1\",\n  \"verdict\": \"match\",\n  \"reason\": \"returned value satisfies expectation\",\n  \"chain_id\": 1,\n  \"expected\": {\n    \"schema\": \"call-expectation-v1\",\n    \"chain_id\": 1,\n    \"call\": {\n      \"to\": \"0xd782bdea4ef02a0bd391eb9089470c8080f0a68e\",\n      \"data\": \"0x18160ddd\",\n      \"value\": \"0x0\"\n    },\n    \"block\": {\n      \"number\": \"0x18f90fd\",\n      \"hash\": \"0xdde0b14a18a8482cd5cd64e3cb9b7f15211c4f1b41a469ac0fd47fc657ba414a\",\n      \"timestamp\": \"0x6ace9557\"\n    },\n    \"evidence\": \"single\",\n    \"expect\": {\n      \"kind\": \"uint256_range\",\n      \"min\": \"1000000000000000000000000000\",\n      \"max\": \"1000000000000000000000000000\"\n    }\n  },\n  \"evidence\": \"single\",\n  \"agreement\": \"not_requested\",\n  \"observations\": [\n    {\n      \"source\": \"https://ethereum-rpc.publicnode.com\",\n      \"block\": {\n        \"number\": \"0x18f90fd\",\n        \"hash\": \"0xdde0b14a18a8482cd5cd64e3cb9b7f15211c4f1b41a469ac0fd47fc657ba414a\",\n        \"timestamp\": \"0x6ace9557\"\n      },\n      \"call\": {\n        \"to\": \"0xd782bdea4ef02a0bd391eb9089470c8080f0a68e\",\n        \"data\": \"0x18160ddd\",\n        \"value\": \"0x0\"\n      },\n      \"returns\": \"uint256\",\n      \"result\": {\n        \"status\": \"returned\",\n        \"raw\": \"0x0000000000000000000000000000000000000000033b2e3c9fd0803ce8000000\",\n        \"uint256\": \"1000000000000000000000000000\"\n      }\n    }\n  ],\n  \"limits\": \"Checks saved provider claims against a declared expectation at one historical block. A match is not transaction success, token movement, gas estimation, authentication, provider independence or a guarantee of future execution. Nothing sent.\"\n}\n"
+      }
+    }
+  ]
+}
