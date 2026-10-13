@@ -1,0 +1,12 @@
+{
+  "name": "Blank Seal",
+  "image": "https://api.imd.fun/artifacts/fc1ff282e8e29d7102002b0496f76b58bc0ba94515ebc4565dbaf2820ac4e069",
+  "attributes": [
+    {"trait_type": "Cave", "value": "Moss"},
+    {"trait_type": "Wall", "value": "Line 2"},
+    {"trait_type": "Number", "value": 25},
+    {"trait_type": "Left behind", "value": "Approval Draft"},
+    {"trait_type": "Meaning", "value": "A loose cord waits beside a blank seal until its owner decides."},
+    {"trait_type": "One thing", "value": "ERC-20 spending-permission audits"}
+  ]
+}

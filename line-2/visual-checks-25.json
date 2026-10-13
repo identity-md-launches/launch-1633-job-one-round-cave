@@ -1,0 +1,36 @@
+{
+  "record": 25,
+  "source_record": 24,
+  "source_wall_sha256": "cd80330d897598928f981281cb2443a05994963ce62cb908108b037b7b917e5c",
+  "wall_png": {
+    "path": "artifacts/line-2/wall-v5.png",
+    "format": "PNG",
+    "dimensions": [1254, 1254],
+    "color": "8-bit RGB, non-interlaced",
+    "bytes": 3947296,
+    "sha256": "fc1ff282e8e29d7102002b0496f76b58bc0ba94515ebc4565dbaf2820ac4e069"
+  },
+  "thumbnail_jpeg": {
+    "path": "dist/line-2/25.jpg",
+    "format": "baseline JPEG, 3 components",
+    "dimensions": [512, 512],
+    "bytes": 55652,
+    "sha256": "e304dd394c79aff04b5354482b4f245f37bad2a43371bebed2de1ab54dfaa073"
+  },
+  "new_mark": {
+    "description": "A blank ochre tablet and a charcoal open cord loop with a red ochre bead, awaiting the owner's choice.",
+    "placement_rectangle": [872, 570, 220, 136],
+    "changed_pixel_bbox": [872, 570, 1092, 706],
+    "changed_pixels": 18522,
+    "pixels_outside_placement_changed": 0
+  },
+  "visual_review": {
+    "pepe_wide_mouth": true,
+    "pepe_heavy_lidded_eyes": true,
+    "inherited_pepe_digits_per_hand": 5,
+    "new_hands_or_handprints": false,
+    "letters_or_numbers_observed": false,
+    "rock_and_framing_preserved": true,
+    "unmet_visual_requirements": []
+  }
+}
