@@ -1,0 +1,28 @@
+{
+  "scope": "Constructor-only acceptance check for the currently assigned Ethereum relay; no request issued.",
+  "results": [
+    {
+      "line": 1,
+      "transport_constructor": "refused",
+      "error": "use HTTPS or the assignment Ethereum endpoint",
+      "network_called": false
+    },
+    {
+      "line": 2,
+      "transport_constructor": "refused",
+      "error": "use a documented public RPC or the assignment endpoint",
+      "network_called": false
+    },
+    {
+      "line": 3,
+      "transport_constructor": "accepted",
+      "network_called": false
+    },
+    {
+      "line": 4,
+      "transport_constructor": "refused",
+      "error": "unsupported public RPC",
+      "network_called": false
+    }
+  ]
+}

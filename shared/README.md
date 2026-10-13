@@ -7,3 +7,5 @@
 These are ordinary Python source files and real historical observations, with no third-party runtime dependency. Run from the workspace root with Python 3.10+ and `-B`. Originals in the line folders remain unchanged. Provenance and limits are documented beside each piece.
 
 - [Witness Context](witness-context/README.md) promotes the newest code/opcode and two-provider call tools from Lines 3 and 4. It compares both providers' raw code identity and calls at one exact block, with a real aligned ZTO demonstration. An agreement is an evidence result, never permission to transact.
+
+- [Revoke Rehearsal](revoke-rehearsal/README.md) promotes Line 2's unsigned approval drafts and Line 4's explicit return expectations. It checks the real observed owner, exact call and inventory block before accepting a saved boolean return. Its three real ZTO demonstrations replay offline.

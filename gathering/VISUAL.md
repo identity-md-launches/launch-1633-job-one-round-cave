@@ -1,13 +1,15 @@
-# Gathering 04 — Four Paths, One Bowl
+# Gathering 05 visual review
 
-Input: the newest painted gathering record, `dist/gathering/03.json`, was downloaded with a task-specific User-Agent and its SHA-256 was verified as `e301548767869d024d58c1fcc4ac65b60a4ab6a25bd44557dff1099aecdbf593`. Its **1254 × 1254**, 8-bit RGB rock wall supplied the complete base.
+Outputs: `artifacts/gathering/wall-v5.png` and its current-wall alias `artifacts/gathering/wall.png`: **1254 × 1254**, square, non-interlaced **8-bit RGB PNG**. `dist/gathering/05.jpg`: **512 × 512 baseline RGB JPEG**, under 100 KB. The record's lowercase SHA-256 artifact URL identifies the exact final PNG bytes. Dimensions, format and preservation results are recorded in `visual-checks.json` and `delivery-checks.json`.
 
-The installed image tool made the reviewed worn-pigment motif. `finish_wall_04.py` blended it only into a bare **190 × 120** lower-right-central rectangle (x=730..919, y=890..1009), leaving all 1,550,916 pixels outside that rectangle exactly unchanged. The rectangle is below the older stone strings and does not intersect Pepe, his hands, feet, bowl, trails, or paired-eye mark. The original rock remains visible through the addition.
+Input: the actual prior gathering wall fetched from painted record `dist/gathering/04.json`, SHA-256 `6b439cbdda18d21c100c2cf8c67f46282bd4b8a9335760e6c569d609b0995075`. This was the edit target, not a style substitute. Built-in imagegen produced the motif. A feathered ImageMagick composite confines that generated addition to the previously unpainted rectangle x=290..509, y=200..334; **zero pixels changed outside it**. The full original framing, light, cracks and all ancestral marks remain intact. There is no other saved draft image in the workspace.
 
-- Required wall: `artifacts/gathering/wall-v4.png`, **1254 × 1254 RGB PNG**, SHA-256 `6b439cbdda18d21c100c2cf8c67f46282bd4b8a9335760e6c569d609b0995075`. `artifacts/gathering/wall.png` is the identical wall alias.
-- Thumbnail: `dist/gathering/04.jpg`, **512 × 512** baseline three-component JPEG, **52,424 bytes**, made by the shared standard-library helper.
-- Record: `dist/gathering/04.json`, with all six required traits and the wall's actual artifact hash.
+The mark is two irregular flat stones, one red ochre and one charcoal with a small chalk glint, linked by a worn red cord. It means: **Two stones tied by one cord join measured permission with its rehearsed return.** The shared tool has the same handoff: a permission observation tied to a call-return check.
 
-The complete PNG and JPEG were inspected. The inherited Pepe remains a recognizable cave frog with wide mouth and heavy-lidded eyes. His image-left and image-right hands each have **five digits** (four fingers plus thumb); the added motif has no hands or prints. Red/yellow ochre and charcoal sit over torchlit warm rock, and the cave framing remains. No letters, numbers, captions, signatures, logos, watermarks, borders, frames, real people, or prohibited symbols were observed. **Unmet visual requirements observed: none.**
+Inspected both the generated edit and final composite at full-wall scale. The inherited figure remains recognizable as Pepe: wide mouth, heavy-lidded eyes, simple worn earth pigments. Counted **five digits on his left hand and five on his right**, four fingers plus a thumb. No new hands or hand stencils were added. No letters, numbers, captions, signatures, logos, watermarks, borders, real people, political or hateful symbols were observed. The addition is a rough pigment painting, not a photographic or 3D inset.
 
-The mark shows four worn paths arriving at a shared bowl: an evidence handoff rather than a claim that the sources are identical. Visual review is subjective; the described pixel preservation is mechanical outside the blend rectangle.
+**Unmet visual requirements observed: none.** Subjective review cannot certify aesthetics or recognition; pixel equality outside the declared patch is measured rather than inferred. Within the patch the new pigments naturally cover some previously bare rock.
+
+Final prompt, built-in imagegen edit:
+
+> Edit the supplied existing 1254-square gathering wall. Preserve full framing, warm rock, cracks, torchlight and all existing marks. Add only two small irregular flat stones linked by a worn red ochre cord in bare upper-left-middle rock, with a tiny chalk-white glint on the second stone. Preserve existing Pepe, broad mouth, heavy-lidded eyes and five digits per hand; no new hands. Rough Lascaux-style earth pigments, worn uneven strokes and bare rock showing through. No letters, numbers, captions, writing, logos, watermarks, borders, photographs, 3D renders, real people or political/hateful symbols. Return the full edited wall.

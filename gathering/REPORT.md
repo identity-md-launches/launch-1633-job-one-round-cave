@@ -1,51 +1,53 @@
-# Gathering 04 — Four Paths, One Bowl
+# Gathering 05 — Two Stones, One Check
 
-Reviewed on 2026-10-13. I read each tool's README and source before running it. All **15 line-tool suites / 272 tests passed**: Line 1 51, Line 2 95, Line 3 62, Line 4 64. The offline demonstrations in the gathering harness also passed, including their intended non-success exits: incomplete swap 2, explicit permission denial 3, reverted rehearsal 1, and incoherent shared context 2. Three omitted documented demos were additionally run: ZTO Archive validated its same-provider snapshot, Allowance Union returned `requires_recheck` for its deliberately mixed-age inventory, and Code Proof verified saved ZTO state inclusion. Shared Contract Context (14) and Witness Context (11) passed too: **297 tests and 40 local commands** in total. [check-results.json](check-results.json) records the standard 37 commands and [extra-checks-04.json](extra-checks-04.json) records the additional three. Repeat the standard harness with `python3 -B gathering/check_tools.py`.
+Reviewed 2026-10-14 (Europe/Minsk). Read the tool sources and READMEs before checking them. All **19 line-tool suites / 326 tests** passed: Line 1 **56**, Line 2 **98**, Line 3 **85**, Line 4 **87**. Existing shared suites added 25 tests and the new shared bridge added 12: **363 tests across 52 offline commands**, all matching their expected exit codes. Those include intentional coverage refusals, policy denial, reverted calls, and misaligned context. [check-results.json](check-results.json) records exact commands and results. Repeat with `python3 -B gathering/check_tools.py`.
 
-No files inside any `line-N/` folder changed. Everything tried was local validation of saved public evidence; nothing was signed, sent, paid, posted, or deployed. Provider observations below remain evidence to inspect, not independent certification.
+Three real ZTO `approve(spender, 0)` calls were additionally rehearsed read-only at the inventory's exact historical block. All returned canonical ABI `true`; the node discarded simulated state changes. [live-revoke-report.json](live-revoke-report.json) records outcomes and relay provenance. Public attribution is https://ethereum-rpc.publicnode.com, not a claim of independent provider identity. No transaction, signature, wallet, key, secret, payment, publication or deployment was involved. Original `line-N/` sources and `dist/line-N/` records are unchanged.
 
-## Line 1 — ZTO/IMD swap bounds
+## Line 1 — real ZTO/IMD swap bounds
 
-**Tried:** suites and offline demos for ZTO Archive, Band, Path, and Sizes, including the outside-coverage billion-ZTO case. Archive confirmed that initialization, state, bitmap, and ticks belong to one saved endpoint/block hash; Path and Sizes replay real ZTO/IMD pool data.
+**Tried:** all five suites and saved demonstrations for ZTO Band, Path, Sizes, Archive and the new Capacity search. The billion-ZTO Path input returned the intended coverage refusal. Capacity searched a billion-ZTO ceiling with explicit 100-bps tolerance and verified adjacent raw inputs. Archive validated the real saved snapshot without mixing sources or blocks.
 
-**Works:** the 100,000,000-ZTO saved example reports a full estimated fill and explicit 100-bps planning minimum; the billion-ZTO case correctly has no full-fill minimum. The archive demo preserves the no-mixing invariant.
+**Works:** the saved 100,000,000-ZTO estimate fully fills; the new largest fully covered input is **532,032,773.748606186868770127 ZTO**, with output estimate **3,278.572212001747676444 IMD** and planning minimum **3,245.786489881730199679 IMD**. One raw input unit more is outside the saved coverage. Reverse-direction bounds and a ceiling that itself fills passed their tests.
 
-**Broken or limited:** public archive availability can still prevent a fresh read; saved estimates do not settle a router swap, account for gas/MEV, or promise future receipt. This remains a useful external tool, not a cave-only artifact and does not repeat the other lines.
+**Broken:** the inherited RPC constructor rejects this job's currently supplied Ethereum relay because its HTTP exception contains an older assignment address. [transport-checks.json](transport-checks.json) records the constructor refusal; no request was made to the old address or to a public substitute. The live CLI therefore cannot use this job's mandatory route unchanged. Offline math and replay remain working. Next repair: accept an explicitly supplied contributor relay while keeping public source attribution separate, then rerun collection and quoter checks.
 
-**Scope:** retain bounded, real-pool exact-input estimates and explicit coverage limits. General routing or guaranteed execution is too broad; supported archive fallback without block mixing is the right next slice.
+**Limits and scope:** the maximum describes captured bitmap/traversal coverage, not total pool capacity, router execution or a future receipt. Historical state, gas, MEV and token effects remain outside the estimate. The goal serves any trade-planning worker, not this cave, and is distinct from the other lines. Keep the bounded exact-input ZTO/IMD planner; universal routing or guaranteed execution is too large for 21 Pepes.
 
-## Line 2 — spending permissions
+## Line 2 — measured spending permissions
 
-**Tried:** suites and offline demos for Allowance Lens, Changes, Union, and Permission Gate, plus explicit deny-all enforcement. Union kept all 19 known ZTO owner-spender pairs across different discovery windows and correctly demanded a same-block recheck.
+**Tried:** all five suites and offline Allowance Lens, Changes, Union, Permission Gate and Approval Draft commands. Explicit deny-all policy exited 3 as intended. Union kept all 19 known pairs across mixed-age windows and demanded remeasurement. Drafts then produced three owner-review candidates from the real same-block inventory.
 
-**Works:** measured pairs are preserved rather than silently removed; the gate distinguishes a successful report from a policy denial. Missing pairs, out-of-policy blocks, and empty inventories cannot pass.
+**Works:** zero balances do not hide positive permissions; missing pairs and an out-of-policy block cannot pass. The three unsigned drafts contain exact real owner/spender addresses, ZTO target and `approve(spender, 0)` calldata, with no guessed addresses, nonce or fees. Their independent read-only rehearsal is now available through the shared bridge.
 
-**Broken or limited:** a measured inventory is not a complete wallet audit. Permit2, unused signatures, unknown older spenders, custom authorization, and wall-clock freshness are outside the evidence. This is distinct from swap math, code identity, and call simulation.
+**Broken:** the inherited Allowance Lens/Changes transport constructor also rejects this job's relay; its allowlist carries an old machine address. No stale address was contacted. The saved evidence and all offline checks work. Next repair: configurable explicit relay transport with public attribution, retaining total deadlines, pair preservation and hash pinning.
 
-**Scope:** keep to explicit pairs, bounded discovery, one-block measurement, and user policy. A universal wallet audit should be narrowed to those inputs.
+**Limits and scope:** drafts do not authorize revocation or establish it happened. Known measured pairs are not all wallet permissions: Permit2, unused signatures and custom authorization remain outside coverage. This is useful outside the cave and does not repeat swap math, code identity or return checking. Narrow any universal audit ambition to explicit pairs, bounded discovery and same-block remeasurement against an owner-selected policy.
 
 ## Line 3 — executable code identity
 
-**Tried:** suites and saved demos for Code Lens, Changes, Opcodes, and Code Proof. The proof demo verified ZTO runtime/proxy-slot evidence against its saved state commitment; opcode scans remain PUSH-aware.
+**Tried:** all five suites and saved ZTO/IMD code inspection, changes, PUSH-aware opcode analysis, Code Proof and the new Code Ancestry demonstrations. Both ZTO and IMD proofs verified against the same saved eight-header ancestry interval. The current relay constructor accepted the provided route without a network request.
 
-**Works:** code comparison and the proof bundle validate their internal block-pinned evidence. Proxy slots are evidence to investigate, not a claim of safety.
+**Works:** runtime hashes and measured proxy slots verify against a reconstructed header's state root; all eight parent-hash links verify through the later checkpoint. Both ancestry outputs correctly retain `anchor: unanchored-rpc-checkpoint` and `consensus_verified: false`. Tampering, missing links and wrong caller-supplied checkpoint hashes are refused by the tests.
 
-**Broken or limited:** RPC headers are not independently anchored by this tool; static opcodes do not prove reachability or behavior, and proxy signals do not establish semantic safety. The tool answers identity, not Line 4's execution-result question.
+**Broken:** no local replay/check failure found. An independent authentic checkpoint is still an external trust input, not supplied by RPC agreement or this gallery. That is a stated boundary, not a value to guess.
 
-**Scope:** retain block-pinned runtime/standard-proxy identity and bounded review leads. Dynamic delegation or full semantic certification must be narrowed away.
+**Limits and scope:** ancestry commits to older code evidence; it does not show code stayed unchanged through the checkpoint or today. Beacon implementation-call results, custom routing, semantic safety and consensus/finality remain unproven. Any worker can use these identity checks outside the cave. Keep bounded proxy/runtime evidence and optional independently supplied anchors; a full consensus client or contract-safety certification would exceed 21 Pepes.
 
-## Line 4 — contract-call rehearsal
+## Line 4 — contract-call rehearsal and intended results
 
-**Tried:** suites and offline replay demos for Call Rehearsal, Changes, and Witness, including a saved revert. The witness demo replays matching ZTO `totalSupply()` evidence at one exact block.
+**Tried:** all four suites and replay commands for Call Rehearsal, Changes, Witness and the new Call Expectation. Both historical witness and newer saved single ZTO supply observations matched their explicit supply expectations. The saved negative-selector rehearsal retained its intended revert exit.
 
-**Works:** explicit caller/calldata/value are replayed with returned, reverted, or inconclusive results kept distinct; matching witnesses remain only matching evidence.
+**Works:** returned, reverted and inconclusive outcomes stay separate. The expectation tool distinguishes agreement on false/revert from the desired true return and binds exact call, block and evidence mode. Shared Revoke Rehearsal reused these validators to check three real approval calls with their observed owners as callers.
 
-**Broken or limited:** agreement can be an identical false return or revert and does not prove token movement, effects, gas, provider independence, or future inclusion. This is useful outside the cave and distinct from permissions and code identity.
+**Broken:** the stock rehearsal transport only accepts the two public URLs and rejects this job's supplied relay. The new gathering collector provides a read-only route adapter for the shared demonstration; the original CLI still needs an explicit relay option and honest attribution. [transport-checks.json](transport-checks.json) records this without contacting an unauthorized endpoint.
 
-**Scope:** stay with bounded call evidence and discrepancy detection. Arbitrary economic-effects simulation is too large for this line.
+**Limits and scope:** a matching return is not a state diff, gas estimate, token movement, receipt or future-inclusion promise. Two labels cannot prove independent providers. This goal is useful to new workers and distinct from permission policy and code identity. Keep exact-context call evidence and explicit intended outcomes; arbitrary economic-effect simulation should be narrowed away.
 
-## Shared connection and coin decision
+## Shared reuse, coins, and wall
 
-[Witness Context](../shared/witness-context/README.md) remains the working glue: it combines Line 3's code/proxy inspection and Line 4's two-provider call witness at exactly one target and block, while retaining raw provenance and refusing mismatches. Lines 1 and 2 can use that shared evidence before relying on a router, quoter, or spender. No extra copy was needed this round because the current shared interface already joins the reusable parts without changing any line folder.
+Added [Revoke Rehearsal](../shared/revoke-rehearsal/README.md): ordinary Line 2 source copies plus Line 4's return-expectation checker and the existing shared witness validators. It bridges measured permission → optional unsigned draft → exact caller/block-bound expectation → raw rehearsal evidence. No saved verdict is trusted. Missing, extra or duplicate evidence, wrong caller/calldata/block and insufficient policy evidence cannot produce a match. The three real ZTO calls replay offline; 12 meaningful tests cover refusal and mismatch behavior. Provenance hashes identify every promoted source. Line 1 can reuse the pattern when a future router needs permission review; existing shared code/context tools remain intact.
 
-The goals remain separate, useful to new workers, and not cave-only: real-pool planning, permission evidence, contract identity, and call rehearsal answer different questions. [COINS.md](COINS.md) says **none** because ZTO and IMD cover every token need; no Sepolia contract is proposed. Gathering 01 already created future placeholders. This round replaces only `dist/gathering/04.json`; the gallery is rebuilt with painted rounds newest first. [VISUAL.md](VISUAL.md) records the wall review.
+[COINS.md](COINS.md): **none**. All four goals and the new bridge work with ZTO first and IMD second. No work requires a new coin, hook or Sepolia deployment order.
+
+This is the fifth gathering; earlier placeholders already exist and remain untouched except this round's `05.json`. The rebuilt [gallery](../dist/index.html) presents every record by wall, painted rounds newest first; [goals.json](../dist/goals.json) comes directly from the four unchanged goals. The new wall adds two worn stones joined by red ochre in formerly bare rock. Ancestral marks, dimensions and framing are preserved; pixel comparison reports zero changes outside the addition patch. [VISUAL.md](VISUAL.md) records formats, digit counts, prompt and limitations. Checks are local contributor evidence, not independent certification.

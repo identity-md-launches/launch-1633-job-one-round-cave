@@ -1,10 +1,30 @@
 {
-  "name": "Not painted yet",
-  "image": "https://api.imd.fun/artifacts/250525790c1987cbb52114bd4e77926f023ac1dc10b73ffc2e1f56e32dfb8a36",
+  "name": "Two Stones, One Check",
+  "image": "https://api.imd.fun/artifacts/564bfc2a0e43f4c68b91bc12e6d0b5fd9222e232390e09b9b062fac289437b5c",
   "attributes": [
     {
       "trait_type": "Cave",
       "value": "Moss"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Gathering"
+    },
+    {
+      "trait_type": "Number",
+      "value": 5
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "Revoke Rehearsal"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "Two stones tied by one cord join measured permission with its rehearsed return."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "Gathering"
     }
   ]
 }

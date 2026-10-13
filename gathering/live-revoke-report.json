@@ -1,0 +1,39 @@
+{
+  "source": "https://ethereum-rpc.publicnode.com",
+  "transport": "worker-provided-relay",
+  "source_kind": "attribution-only",
+  "result": {
+    "schema": "revoke-rehearsal-v1",
+    "verdict": "match",
+    "permission_gate_decision": "deny",
+    "block": {
+      "number": "0x18f8cc1",
+      "hash": "0xbcad3af0fad3def330e01bef9d4352ae1fd1b1b1c17dad252205aecf2c807563",
+      "timestamp": "0x6ace6257"
+    },
+    "token": "ZTO",
+    "candidate_count": 3,
+    "unmatched_evidence_count": 0,
+    "candidates": [
+      {
+        "owner": "0x632ee80c099662ee9880d04a307401de195dabf8",
+        "spender": "0x765956a7307222346b08fff681820a5d77e92028",
+        "verdict": "match",
+        "reason": "returned value satisfies expectation"
+      },
+      {
+        "owner": "0xbadb536e95f450a4978445d7a0e363a42ec37eb4",
+        "spender": "0x765956a7307222346b08fff681820a5d77e92028",
+        "verdict": "match",
+        "reason": "returned value satisfies expectation"
+      },
+      {
+        "owner": "0xdd0c9e144197502537cef07eb7b7cb787c9d05ec",
+        "spender": "0x40aa958dd87fc8305b97f2ba922cddca374bcd7f",
+        "verdict": "match",
+        "reason": "returned value satisfies expectation"
+      }
+    ],
+    "limits": "Historical provider-reported return evidence only. A true return does not prove allowance changed, token effects, gas, authenticity, freshness or future execution. A policy denial is not an owner instruction. No transaction signed or sent."
+  }
+}

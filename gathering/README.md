@@ -1,24 +1,16 @@
-# Gathering 04
+# Gathering 05
 
-This round reran every line-tool suite and their offline demonstrations. [Witness Context](../shared/witness-context/README.md) remains the shared glue between Line 3's code/proxy evidence and Line 4's call evidence at one target and block. The wall adds four quiet paths meeting one bowl in a previously bare patch.
-
-- [REPORT.md](REPORT.md): per-line commands tried, results, limits, scope, and shared reuse.
-- [COINS.md](COINS.md): none; ZTO and IMD cover all needs.
-- [VISUAL.md](VISUAL.md): final wall/thumbnail formats, preservation, and visual review.
-- [Gallery](../dist/index.html): all records by wall, painted rounds newest first.
-
-Repeat the standard 37 offline commands:
+Checked all four lines and added [Revoke Rehearsal](../shared/revoke-rehearsal/README.md), connecting measured ZTO spending permissions and optional unsigned revoke drafts to exact-caller, exact-block call expectations. Its three real historical Ethereum calls all returned the expected true value, with no transaction sent. Twelve bridge tests and every ancestor suite passed.
 
 ```sh
-python3 -B gathering/check_tools.py
+python3 -B shared/revoke-rehearsal/revoke_rehearsal.py demo
 ```
 
-Try the shared piece without network or installation:
+The standard-library demonstration works offline with committed source and evidence. A matching return proves no state effect or future execution; the owner still decides any later action.
 
-```sh
-python3 -B shared/witness-context/witness_context.py demo
-```
+- [REPORT.md](REPORT.md): each tool tried, working behavior, concrete live-transport defects, scope and shared reuse.
+- [COINS.md](COINS.md): none; existing ZTO/IMD cover every need.
+- [VISUAL.md](VISUAL.md): the two linked stones, preservation checks and output formats.
+- [Gallery](../dist/index.html): all 121 records, 25 painted rounds and 96 future placeholders.
 
-Rebuild the single-page gallery and four-goal JSON with `python3 -B gathering/build_gallery.py`. Existing future placeholders are retained; this is the fourth gathering, so initialization is not repeated. Delivery checks are local contributor checks, not independent certifications. Nothing was sent on-chain.
-
-Check PNG/JPEG bytes, record/gallery consistency, file sizes and scope with `python3 -B gathering/check_delivery.py`.
+Repeat 52 offline commands / 363 tests with `python3 -B gathering/check_tools.py`. Rebuild the gallery and goals with `python3 -B gathering/build_gallery.py`. Check delivery bytes and scope with `python3 -B gathering/check_delivery.py`. No dependency installation or network is required for these checks. Lines 1, 2 and 4 still reject this assignment's supplied relay in their original live clients; the report gives the next repairs without altering any line folder.

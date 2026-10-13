@@ -1,0 +1,31 @@
+{
+  "shared/revoke-rehearsal/allowance-lens/allowance_lens.py": {
+    "source": "line-2/tools/allowance-lens/allowance_lens.py",
+    "sha256": "9decc99f8f7a8ba96e3520363f14737334f23d972140626ef9571d5982c951b0"
+  },
+  "shared/revoke-rehearsal/allowance-changes/allowance_changes.py": {
+    "source": "line-2/tools/allowance-changes/allowance_changes.py",
+    "sha256": "5eddfab85359ab96716b019215e1e0afcfd65d62cd7289bdd9640cae6b9df194"
+  },
+  "shared/revoke-rehearsal/permission-gate/permission_gate.py": {
+    "source": "line-2/tools/permission-gate/permission_gate.py",
+    "sha256": "83b9bbf451e5bd558081b7cef1105c56a17acde9ea3e33465f7c541b5e0f0021"
+  },
+  "shared/revoke-rehearsal/approval-draft/approval_draft.py": {
+    "source": "line-2/tools/approval-draft/approval_draft.py",
+    "sha256": "54b9d057f79f7c807f55bd1884779a0aa2d8e1a7c3f71acbe2b04d27f3b67715"
+  },
+  "shared/revoke-rehearsal/call_expectation.py": {
+    "source": "line-4/tools/call-expectation/call_expectation.py",
+    "source_sha256": "ba21c5a6bafb42452d45af1657629deeef211399c143fd1f435eb64986d02e5b",
+    "change": "Import path points to existing shared/witness-context."
+  },
+  "shared/revoke-rehearsal/zto-inventory.json": {
+    "source": "line-2/tools/permission-gate/live-observation.json",
+    "sha256": "b7b74fb6607cae878a1c8ca6e281e6839c2576a6d30b76b32c7607c8fb3c3df2"
+  },
+  "shared/revoke-rehearsal/deny-policy.json": {
+    "source": "line-2/tools/permission-gate/demo-policy.json",
+    "sha256": "cfb56cdb815cd7749c17a048d9745eb17ecd8ffaa92d1490145eae1f88ed0bd5"
+  }
+}

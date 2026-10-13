@@ -1,5 +1,5 @@
-# Round-four image prompt
+# Gathering 05 image prompt
 
-Use case: precise-object-edit. Asset: the next square gathering cave wall. Input: the prior gathering wall as edit target. Request: preserve every existing rock feature and pigment mark, adding only a small lower-right-central motif of four uneven ochre paths meeting a tiny charcoal bowl. Medium: worn Lascaux/Chauvet-like earth pigments on warm torchlit rock. Constraints: no people, extra frogs, hands, handprints, text, numbers, logos, watermarks, borders, or changes elsewhere.
+Built-in imagegen; existing Gathering 04 wall as the edit target. Add two small irregular earth-pigment stones linked by worn red ochre cord in formerly bare upper-left rock, with a chalk glint on the second stone. Keep 1254-square framing, rock, cracks, light, every ancestral mark and Pepe's two five-digit hands. No new hands, letters, numbers, captions, signatures, logos, watermarks, borders, photographs, 3D renders, real people or political/hateful symbols.
 
-The built-in image generator created a reviewed draft. `finish_wall_04.py` used that draft only in the stated blend rectangle; it did not copy a full regenerated wall.
+The generated pigment patch was visually reviewed and feather-composited onto the original rock. Full specification, meaning, preservation result and limitations: [VISUAL.md](VISUAL.md).

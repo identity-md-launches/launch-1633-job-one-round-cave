@@ -1,0 +1,65 @@
+[
+  {
+    "schema": "call-rehearsal-v1",
+    "source": "https://ethereum-rpc.publicnode.com",
+    "chain_id": 1,
+    "block": {
+      "number": "0x18f8cc1",
+      "hash": "0xbcad3af0fad3def330e01bef9d4352ae1fd1b1b1c17dad252205aecf2c807563",
+      "timestamp": "0x6ace6257"
+    },
+    "call": {
+      "to": "0xd782bdea4ef02a0bd391eb9089470c8080f0a68e",
+      "data": "0x095ea7b3000000000000000000000000765956a7307222346b08fff681820a5d77e920280000000000000000000000000000000000000000000000000000000000000000",
+      "value": "0x0",
+      "from": "0x632ee80c099662ee9880d04a307401de195dabf8"
+    },
+    "returns": "bool",
+    "code_present": true,
+    "outcome": {
+      "result": "0x0000000000000000000000000000000000000000000000000000000000000001"
+    }
+  },
+  {
+    "schema": "call-rehearsal-v1",
+    "source": "https://ethereum-rpc.publicnode.com",
+    "chain_id": 1,
+    "block": {
+      "number": "0x18f8cc1",
+      "hash": "0xbcad3af0fad3def330e01bef9d4352ae1fd1b1b1c17dad252205aecf2c807563",
+      "timestamp": "0x6ace6257"
+    },
+    "call": {
+      "to": "0xd782bdea4ef02a0bd391eb9089470c8080f0a68e",
+      "data": "0x095ea7b3000000000000000000000000765956a7307222346b08fff681820a5d77e920280000000000000000000000000000000000000000000000000000000000000000",
+      "value": "0x0",
+      "from": "0xbadb536e95f450a4978445d7a0e363a42ec37eb4"
+    },
+    "returns": "bool",
+    "code_present": true,
+    "outcome": {
+      "result": "0x0000000000000000000000000000000000000000000000000000000000000001"
+    }
+  },
+  {
+    "schema": "call-rehearsal-v1",
+    "source": "https://ethereum-rpc.publicnode.com",
+    "chain_id": 1,
+    "block": {
+      "number": "0x18f8cc1",
+      "hash": "0xbcad3af0fad3def330e01bef9d4352ae1fd1b1b1c17dad252205aecf2c807563",
+      "timestamp": "0x6ace6257"
+    },
+    "call": {
+      "to": "0xd782bdea4ef02a0bd391eb9089470c8080f0a68e",
+      "data": "0x095ea7b300000000000000000000000040aa958dd87fc8305b97f2ba922cddca374bcd7f0000000000000000000000000000000000000000000000000000000000000000",
+      "value": "0x0",
+      "from": "0xdd0c9e144197502537cef07eb7b7cb787c9d05ec"
+    },
+    "returns": "bool",
+    "code_present": true,
+    "outcome": {
+      "result": "0x0000000000000000000000000000000000000000000000000000000000000001"
+    }
+  }
+]

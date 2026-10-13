@@ -15,6 +15,15 @@ def checks():
                 commands.append((f'line-{number}-{folder.name}-suite',
                     ['-m', 'unittest', 'discover', '-s', str(folder), '-p', 'test_*.py', '-v'], 0))
     commands.extend([
+        ('zto-archive-demo', ['line-1/tools/zto-archive/zto_archive.py', '--snapshot', 'line-1/tools/zto-path/observation.json'], 0),
+        ('zto-capacity-demo', ['line-1/tools/zto-capacity/zto_capacity.py', '--ceiling', '1000000000', '--slippage-bps', '100'], 0),
+        ('allowance-union-demo', ['line-2/tools/allowance-union/allowance_union.py'], 0),
+        ('approval-draft-demo', ['line-2/tools/approval-draft/approval_draft.py'], 0),
+        ('code-proof-demo', ['line-3/tools/code-proof/code_proof.py', '--bundle', 'line-3/tools/code-proof/zto-proof.json'], 0),
+        ('code-ancestry-zto-demo', ['line-3/tools/code-ancestry/code_ancestry.py', '--bundle', 'line-3/tools/code-proof/zto-proof.json', '--ancestry', 'line-3/tools/code-ancestry/zto-ancestry.json'], 0),
+        ('code-ancestry-imd-demo', ['line-3/tools/code-ancestry/code_ancestry.py', '--bundle', 'line-3/tools/code-proof/imd-proof.json', '--ancestry', 'line-3/tools/code-ancestry/zto-ancestry.json'], 0),
+        ('call-expectation-demo', ['line-4/tools/call-expectation/call_expectation.py', 'demo'], 0),
+        ('call-expectation-fresh-saved', ['line-4/tools/call-expectation/call_expectation.py', 'check', 'line-4/tools/call-expectation/zto-live-observation.json', 'line-4/tools/call-expectation/zto-live-expectation.json'], 0),
         ('zto-band-demo', ['line-1/tools/zto-band/zto_band.py', '--snapshot', 'line-1/tools/zto-band/observation.json', '--amount', '1'], 0),
         ('zto-path-demo', ['line-1/tools/zto-path/zto_path.py', '--snapshot', 'line-1/tools/zto-path/observation.json'], 0),
         ('zto-path-incomplete', ['line-1/tools/zto-path/zto_path.py', '--snapshot', 'line-1/tools/zto-path/observation.json', '--amount', '1000000000'], 2),
@@ -40,6 +49,8 @@ def checks():
             commands.append((folder.name + '-suite', ['-m', 'unittest', 'discover', '-s', str(folder), '-p', 'test_*.py', '-v'], 0))
     if Path('shared/witness-context/witness_context.py').exists():
         commands.append(('witness-context-demo', ['shared/witness-context/witness_context.py', 'demo'], 0))
+    if Path('shared/revoke-rehearsal/revoke_rehearsal.py').exists():
+        commands.append(('revoke-rehearsal-demo', ['shared/revoke-rehearsal/revoke_rehearsal.py', 'demo'], 0))
     return commands
 
 

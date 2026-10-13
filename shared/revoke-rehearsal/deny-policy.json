@@ -1,0 +1,8 @@
+{
+  "schema": "permission-gate-policy-v1",
+  "chain_id": 1,
+  "token_address": "0xd782bdea4ef02a0bd391eb9089470c8080f0a68e",
+  "minimum_block": 26184897,
+  "maximum_block": 26184897,
+  "pairs": []
+}

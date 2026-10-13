@@ -1,19 +1,22 @@
 {
-  "ancestor_sha256": "cdfe605ff9bd7cea90c3f4c06456cd93debebaa2053969718441dcf271eb4029",
-  "generated_motif_sha256": "0f372d661a48d5308787cc67ef61d9538603a084e51173f23eec6d117e3be50c",
-  "wall_sha256": "e301548767869d024d58c1fcc4ac65b60a4ab6a25bd44557dff1099aecdbf593",
-  "dimensions": [
-    1254,
-    1254
-  ],
+  "schema": "gathering-visual-checks-v5",
+  "source_record": "dist/gathering/04.json",
+  "source_sha256": "6b439cbdda18d21c100c2cf8c67f46282bd4b8a9335760e6c569d609b0995075",
+  "output_sha256": "564bfc2a0e43f4c68b91bc12e6d0b5fd9222e232390e09b9b062fac289437b5c",
+  "width": 1254,
+  "height": 1254,
   "format": "PNG RGB 8-bit",
-  "addition_rectangle_xywh": [
-    300,
-    760,
+  "addition_rectangle": [
+    290,
     200,
-    180
+    510,
+    335
   ],
-  "changed_pixels": 13504,
-  "outside_rectangle_identical": true,
-  "method": "Only extracted earth-pigment motif composited; ancestor rock pixels influence pigment lightness. No ancestor mark overlaps this rectangle."
+  "changed_pixels": 26094,
+  "changed_pixels_outside_addition": 0,
+  "left_hand_digits": 5,
+  "right_hand_digits": 5,
+  "new_hands": 0,
+  "unmet_visual_requirements_observed": [],
+  "review": "Generated motif visually inspected; ancestral marks and rock pixels outside the formerly bare addition patch are exactly preserved."
 }
