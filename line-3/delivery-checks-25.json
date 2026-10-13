@@ -1,0 +1,59 @@
+{
+  "wall": {
+    "path": "artifacts/line-3/wall-v5.png",
+    "format": "PNG RGB",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "bytes": 2469848,
+    "sha256": "4a8166436a1cc3fa4931f384f29fad0d9cbb76b983a515a79c3d77306aabc272"
+  },
+  "current_wall": {
+    "path": "artifacts/line-3/wall.png",
+    "format": "PNG RGB",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "bytes": 2469848,
+    "sha256": "4a8166436a1cc3fa4931f384f29fad0d9cbb76b983a515a79c3d77306aabc272"
+  },
+  "thumbnail": {
+    "path": "dist/line-3/25.jpg",
+    "format": "JPEG RGB",
+    "dimensions": [
+      512,
+      512
+    ],
+    "bytes": 64027
+  },
+  "record": "dist/line-3/25.json",
+  "record_schema_valid": true,
+  "record_hash_matches_png": true,
+  "older_records_unchanged": true,
+  "goal_byte_identical": true,
+  "new_record_count": 1,
+  "unit_tests_passed": 85,
+  "named_png_outputs_untracked": true,
+  "all_new_non_artifact_files_under_100000_bytes": true,
+  "only_allowed_delivery_paths_changed": true,
+  "git_diff_check_passed": true,
+  "unmet_visual_requirements": [],
+  "changed_paths": [
+    "line-3/USED.md",
+    "dist/line-3/25.jpg",
+    "dist/line-3/25.json",
+    "line-3/CHECKS-25.md",
+    "line-3/IMAGE-PROMPT-25.md",
+    "line-3/VISUAL-25.md",
+    "line-3/check-results-25.json",
+    "line-3/tools/code-ancestry/README.md",
+    "line-3/tools/code-ancestry/code_ancestry.py",
+    "line-3/tools/code-ancestry/imd-result.json",
+    "line-3/tools/code-ancestry/test_code_ancestry.py",
+    "line-3/tools/code-ancestry/zto-ancestry.json",
+    "line-3/tools/code-ancestry/zto-result.json",
+    "line-3/visual-checks-25.json"
+  ]
+}

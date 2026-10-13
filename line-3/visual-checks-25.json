@@ -1,0 +1,45 @@
+{
+  "schema": "pepeolithic-visual-review-v1",
+  "inherited_sha256": "e53dac56ef1bf2451fc669fa2321c807f64251a1e9b8d19f2dfbcc3792fed032",
+  "wall_sha256": "4a8166436a1cc3fa4931f384f29fad0d9cbb76b983a515a79c3d77306aabc272",
+  "wall_paths": [
+    "artifacts/line-3/wall-v5.png",
+    "artifacts/line-3/wall.png"
+  ],
+  "wall_format": "PNG",
+  "wall_dimensions": [
+    1254,
+    1254
+  ],
+  "wall_bytes": 2469848,
+  "thumbnail_path": "dist/line-3/25.jpg",
+  "thumbnail_format": "JPEG",
+  "thumbnail_dimensions": [
+    512,
+    512
+  ],
+  "thumbnail_bytes": 64027,
+  "addition_rectangle": [
+    276,
+    887,
+    538,
+    1035
+  ],
+  "changed_pixels_inside_rectangle": 37710,
+  "changed_pixels_outside_rectangle": 0,
+  "manual_review_pending": false,
+  "manual_review": {
+    "whole_finished_wall_viewed": true,
+    "new_head_only_pepe": true,
+    "new_hands": 0,
+    "inherited_visible_hands": 2,
+    "digits_per_inherited_hand": 5,
+    "ancestor_pixels_preserved": true,
+    "letters_numbers_captions_logos_frames_identified": false,
+    "unmet_visual_requirements": [],
+    "limitations": [
+      "Small texture variations inside previously unpainted addition rectangle.",
+      "Worn inherited digit outlines are visually interpreted, not independently certified."
+    ]
+  }
+}

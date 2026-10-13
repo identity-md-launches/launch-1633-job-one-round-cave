@@ -1,0 +1,155 @@
+{
+  "ancestor_suites": [
+    {
+      "tool": "code-lens",
+      "command": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "line-3/tools/code-lens",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "output": "test_beacon_candidate (test_code_lens.CodeLensTests.test_beacon_candidate) ... ok\ntest_eip1967_implementation_candidate (test_code_lens.CodeLensTests.test_eip1967_implementation_candidate) ... ok\ntest_ethereum_keccak_vectors (test_code_lens.CodeLensTests.test_ethereum_keccak_vectors) ... ok\ntest_exact_minimal_proxy (test_code_lens.CodeLensTests.test_exact_minimal_proxy) ... ok\ntest_expected_reviewed_hash_match_and_mismatch (test_code_lens.CodeLensTests.test_expected_reviewed_hash_match_and_mismatch) ... ok\ntest_files_must_stay_in_workspace (test_code_lens.CodeLensTests.test_files_must_stay_in_workspace) ... ok\ntest_malformed_runtime_and_target (test_code_lens.CodeLensTests.test_malformed_runtime_and_target) ... ok\ntest_no_code_or_zero_result_beacon (test_code_lens.CodeLensTests.test_no_code_or_zero_result_beacon) ... ok\ntest_no_truncated_proxy_path (test_code_lens.CodeLensTests.test_no_truncated_proxy_path) ... ok\ntest_proxy_cycle_and_depth_limit (test_code_lens.CodeLensTests.test_proxy_cycle_and_depth_limit) ... ok\ntest_read_operations_are_hash_pinned (test_code_lens.CodeLensTests.test_read_operations_are_hash_pinned) ... ok\ntest_real_committed_observations (test_code_lens.CodeLensTests.test_real_committed_observations) ... ok\ntest_reject_ambiguous_or_malformed_proxy_slots (test_code_lens.CodeLensTests.test_reject_ambiguous_or_malformed_proxy_slots) ... ok\ntest_reject_empty_target_wrong_chain_and_reorg (test_code_lens.CodeLensTests.test_reject_empty_target_wrong_chain_and_reorg) ... ok\ntest_rpc_envelope_and_read_only_guard (test_code_lens.CodeLensTests.test_rpc_envelope_and_read_only_guard) ... ok\ntest_tampered_observation_rejected (test_code_lens.CodeLensTests.test_tampered_observation_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 16 tests in 0.065s\n\nOK\n"
+    },
+    {
+      "tool": "code-changes",
+      "command": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "line-3/tools/code-changes",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "output": "test_beacon_runtime_change_detected (test_code_changes.ChangesTests.test_beacon_runtime_change_detected) ... ok\ntest_changed_terminal_code (test_code_changes.ChangesTests.test_changed_terminal_code) ... ok\ntest_path_changes_without_effective_hash_change (test_code_changes.ChangesTests.test_path_changes_without_effective_hash_change) ... ok\ntest_public_source_mismatch (test_code_changes.ChangesTests.test_public_source_mismatch) ... ok\ntest_public_transport_provenance (test_code_changes.ChangesTests.test_public_transport_provenance) ... ok\ntest_real_observation_self_comparison (test_code_changes.ChangesTests.test_real_observation_self_comparison) ... ok\ntest_reject_target_order_fork_and_tampered_hash (test_code_changes.ChangesTests.test_reject_target_order_fork_and_tampered_hash) ... ok\ntest_relay_redaction_and_label_tampering (test_code_changes.ChangesTests.test_relay_redaction_and_label_tampering) ... ok\ntest_same_block_conflicting_evidence (test_code_changes.ChangesTests.test_same_block_conflicting_evidence) ... ok\ntest_unchanged_later_block (test_code_changes.ChangesTests.test_unchanged_later_block) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.023s\n\nOK\n"
+    },
+    {
+      "tool": "code-opcodes",
+      "command": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "line-3/tools/code-opcodes",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "output": "test_push_data_is_skipped_and_actual_delegatecall_is_found (test_code_opcodes.CodeOpcodesTests.test_push_data_is_skipped_and_actual_delegatecall_is_found) ... ok\ntest_real_imd_metadata_is_not_executable_callcode (test_code_opcodes.CodeOpcodesTests.test_real_imd_metadata_is_not_executable_callcode) ... ok\ntest_real_zto (test_code_opcodes.CodeOpcodesTests.test_real_zto) ... ok\ntest_tampered_report_is_rejected (test_code_opcodes.CodeOpcodesTests.test_tampered_report_is_rejected) ... ok\ntest_unrecognized_tail_is_scanned (test_code_opcodes.CodeOpcodesTests.test_unrecognized_tail_is_scanned) ... ok\ntest_unresolved_signal_for_actual_delegation (test_code_opcodes.CodeOpcodesTests.test_unresolved_signal_for_actual_delegation) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.044s\n\nOK\n"
+    },
+    {
+      "tool": "code-proof",
+      "command": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "line-3/tools/code-proof",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "output": "test_account_proof_for_wrong_address (test_code_proof.ProofTests.test_account_proof_for_wrong_address) ... ok\ntest_beacon_results_are_explicitly_not_proven (test_code_proof.ProofTests.test_beacon_results_are_explicitly_not_proven) ... ok\ntest_beacon_runtime_and_nonzero_proxy_slot_cannot_be_forged (test_code_proof.ProofTests.test_beacon_runtime_and_nonzero_proxy_slot_cannot_be_forged) ... ok\ntest_branch_hashed_child_and_absent_child (test_code_proof.ProofTests.test_branch_hashed_child_and_absent_child) ... ok\ntest_cli_rejects_wrong_anchor_without_partial_json (test_code_proof.ProofTests.test_cli_rejects_wrong_anchor_without_partial_json) ... ok\ntest_corrupted_account_node (test_code_proof.ProofTests.test_corrupted_account_node) ... ok\ntest_duplicate_and_oversized_proofs (test_code_proof.ProofTests.test_duplicate_and_oversized_proofs) ... ok\ntest_empty_storage_trie (test_code_proof.ProofTests.test_empty_storage_trie) ... ok\ntest_extension_and_embedded_branch_leaf (test_code_proof.ProofTests.test_extension_and_embedded_branch_leaf) ... ok\ntest_forged_header_hash_does_not_forge_state_proof (test_code_proof.ProofTests.test_forged_header_hash_does_not_forge_state_proof) ... ok\ntest_forged_nonzero_slot_with_same_terminal_address (test_code_proof.ProofTests.test_forged_nonzero_slot_with_same_terminal_address) ... ok\ntest_forged_runtime_even_with_consistent_auxiliary_hashes (test_code_proof.ProofTests.test_forged_runtime_even_with_consistent_auxiliary_hashes) ... ok\ntest_hashed_extension_child (test_code_proof.ProofTests.test_hashed_extension_child) ... ok\ntest_header_unsupported_fork_and_invalid_width (test_code_proof.ProofTests.test_header_unsupported_fork_and_invalid_width) ... ok\ntest_independent_anchor_must_match (test_code_proof.ProofTests.test_independent_anchor_must_match) ... ok\ntest_invalid_paths_child_reference_and_leaf_length (test_code_proof.ProofTests.test_invalid_paths_child_reference_and_leaf_length) ... ok\ntest_leaf_inclusion_and_noninclusion (test_code_proof.ProofTests.test_leaf_inclusion_and_noninclusion) ... ok\ntest_live_collection_pins_all_proofs_and_checks_reorg (test_code_proof.ProofTests.test_live_collection_pins_all_proofs_and_checks_reorg) ... ok\ntest_missing_account_node_is_not_absence (test_code_proof.ProofTests.test_missing_account_node_is_not_absence) ... ok\ntest_missing_duplicate_and_extra_storage_proofs (test_code_proof.ProofTests.test_missing_duplicate_and_extra_storage_proofs) ... ok\ntest_missing_storage_node_is_not_zero (test_code_proof.ProofTests.test_missing_storage_node_is_not_zero) ... ok\ntest_noncanonical_rlp_and_integer_rejection (test_code_proof.ProofTests.test_noncanonical_rlp_and_integer_rejection) ... ok\ntest_proxy_path_requires_every_account_proof (test_code_proof.ProofTests.test_proxy_path_requires_every_account_proof) ... ok\ntest_random_single_leaf_paths (test_code_proof.ProofTests.test_random_single_leaf_paths) ... ok\ntest_real_zto_and_imd_proofs (test_code_proof.ProofTests.test_real_zto_and_imd_proofs) ... ok\ntest_reordered_proof_nodes_work_but_junk_does_not (test_code_proof.ProofTests.test_reordered_proof_nodes_work_but_junk_does_not) ... ok\ntest_rlp_roundtrip_boundaries (test_code_proof.ProofTests.test_rlp_roundtrip_boundaries) ... ok\ntest_rpc_never_allows_transaction_submission (test_code_proof.ProofTests.test_rpc_never_allows_transaction_submission) ... ok\ntest_tampered_header_state_root_height_and_hash (test_code_proof.ProofTests.test_tampered_header_state_root_height_and_hash) ... ok\ntest_tampered_storage_root_nonce_and_balance (test_code_proof.ProofTests.test_tampered_storage_root_nonce_and_balance) ... ok\n\n----------------------------------------------------------------------\nRan 30 tests in 0.411s\n\nOK\n"
+    }
+  ],
+  "new_suite": {
+    "tool": "code-ancestry",
+    "command": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "line-3/tools/code-ancestry",
+      "-p",
+      "test_*.py",
+      "-v"
+    ],
+    "exit_code": 0,
+    "tests_run": 23,
+    "status": "OK",
+    "captured_in": "session tool output; summary recorded here"
+  },
+  "unit_tests_total": 85,
+  "demonstrations": [
+    {
+      "command": [
+        "python3",
+        "-B",
+        "line-3/tools/code-ancestry/code_ancestry.py",
+        "--bundle",
+        "line-3/tools/code-proof/zto-proof.json",
+        "--ancestry",
+        "line-3/tools/code-ancestry/zto-ancestry.json"
+      ],
+      "exit_code": 0,
+      "parent_links_verified": 8,
+      "anchor": "unanchored-rpc-checkpoint"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "line-3/tools/code-ancestry/code_ancestry.py",
+        "--bundle",
+        "line-3/tools/code-proof/imd-proof.json",
+        "--ancestry",
+        "line-3/tools/code-ancestry/zto-ancestry.json"
+      ],
+      "exit_code": 0,
+      "parent_links_verified": 8,
+      "anchor": "unanchored-rpc-checkpoint"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "line-3/tools/code-ancestry/code_ancestry.py",
+        "--bundle",
+        "line-3/tools/code-proof/zto-proof.json",
+        "--ancestry",
+        "line-3/tools/code-ancestry/zto-ancestry.json",
+        "--expect-checkpoint-hash",
+        "0x07f196d25c75c25619fa44ce3d3b16c3448f2ebdcc767ad8353f84ad657cdbd7"
+      ],
+      "exit_code": 0,
+      "anchor": "caller-supplied-checkpoint-hash",
+      "independent_trust_supplied": false
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "line-3/tools/code-ancestry/code_ancestry.py",
+        "--bundle",
+        "line-3/tools/code-proof/zto-proof.json",
+        "--ancestry",
+        "line-3/tools/code-ancestry/zto-ancestry.json",
+        "--expect-checkpoint-hash",
+        "0x57f561e7217307ab29f9fc3563627b97b97242261522b70429f2a873cf2593fd"
+      ],
+      "exit_code": 1,
+      "stdout_empty": true,
+      "stderr": "Code Ancestry: caller checkpoint hash does not match",
+      "expected_failure": true
+    }
+  ]
+}
